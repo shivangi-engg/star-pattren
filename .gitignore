@@ -1,0 +1,4 @@
+#Learn about the gitignore file
+
+#ignoring compiled class
+*.class
