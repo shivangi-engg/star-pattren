@@ -1,1 +1,1 @@
-# star-pattren
+# star-pattern
