@@ -1,4 +1,5 @@
 
+
 //Package IMPORT
 import printpackage.*;
 
@@ -17,8 +18,17 @@ public class Main
             System.out.printlln is itself a method which aceepts some param. You paaassed a method in that
             which , if returns null, will error out.
         */
+        
+
         //System.out.print(printLogicInstance.printStarPattern());
 		
+        printpackage.PrintLogicOdd printLogicOddInstance = new printpackage.PrintLogicOdd();
+        printLogicOddInstance.printoddstarpattern();
+
+
+        //for reverse pattern
+        printpackage.PrintLogicReverse PrintLogicReverseInstance = new printpackage.PrintLogicReverse();
+        PrintLogicReverseInstance.printReversePattern();
 	}
 
 

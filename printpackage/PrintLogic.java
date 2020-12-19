@@ -1,18 +1,11 @@
-
 package printpackage;
-
 import java.io.*;
 import java.lang.*;
 import java.util.*;
-
 public class PrintLogic 
-{
-
-    //PUBLIC - ACCESS SPECIFIERS
+{    //PUBLIC - ACCESS SPECIFIERS
     //VOID   - RETURN TYPE  - Void means no return type is required, 
-
-    //the mehtods tell the java compiler that I am not returning anything
-
+   //the mehtods tell the java compiler that I am not returning anything
     //Give meaningful names to the method.
     public void printStarPattern() 
     {
@@ -20,7 +13,6 @@ public class PrintLogic
 		Scanner sc = new Scanner(System.in);
 		System.out.println("enter the no. upto which u want the pattren to print: ");
         int s= sc.nextInt();
-        
         /*
         This is the main application login - printing stars
         Think about counter and how will this be execute
