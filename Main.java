@@ -2,33 +2,46 @@
 
 //Package IMPORT
 import printpackage.*;
-
+import java.util.*;
 public class Main
 {
 	public static void main(String[] args) 
 	{   
-        //No need to mention this as a main object
-		printpackage.PrintLogic printLogicInstance = new printpackage.PrintLogic();
-        
-        //Simply INVOKE the class method here.
-        printLogicInstance.printStarPattern();
-
-        /*TO-DO : Read here
-            Because of this line - the compiler was forcing you to create a non void method.
-            System.out.printlln is itself a method which aceepts some param. You paaassed a method in that
-            which , if returns null, will error out.
-        */
-        
-
-        //System.out.print(printLogicInstance.printStarPattern());
-		
-        printpackage.PrintLogicOdd printLogicOddInstance = new printpackage.PrintLogicOdd();
-        printLogicOddInstance.printoddstarpattern();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the name of pattern from the following options: 1.simple  2.odd   3.reverse  4.crown");
+        String name = sc.nextLine();
+        switch(name)
+        {
+            case "simple":
+                //for simple pattern
+                printpackage.PrintLogic printLogicInstance = new printpackage.PrintLogic();
+                printLogicInstance.printStarPattern();
+                break;
 
 
-        //for reverse pattern
-        printpackage.PrintLogicReverse PrintLogicReverseInstance = new printpackage.PrintLogicReverse();
-        PrintLogicReverseInstance.printReversePattern();
+            case "odd":
+                //for odd pattern
+                printpackage.PrintLogicOdd printLogicOddInstance = new printpackage.PrintLogicOdd();
+                printLogicOddInstance.printoddstarpattern();
+                break;
+
+
+            case "reverse":
+                //for reverse pattern
+                printpackage.PrintLogicReverse PrintLogicReverseInstance = new printpackage.PrintLogicReverse();
+                PrintLogicReverseInstance.printReversePattern();
+                break;
+
+
+            case "crown":  
+                //for crown paatern
+                printpackage.PrintLogicCrown PrintLogicCrownInstance = new printpackage.PrintLogicCrown();
+                PrintLogicCrownInstance.printCrownPattern();
+                break;
+
+            default:
+                System.out.println("thats not an option");
+         }
 	}
 
 
