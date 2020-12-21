@@ -8,7 +8,7 @@ public class Main
 	public static void main(String[] args) 
 	{   
         Scanner sc = new Scanner(System.in);
-        System.out.println("enter the name of pattern from the following options: 1.simple  2.odd   3.reverse  4.crown");
+        System.out.println("enter the name of pattern from the following options: simple, odd, reverse,  crown,  arrowhead");
         String name = sc.nextLine();
         switch(name)
         {
@@ -39,6 +39,12 @@ public class Main
                 PrintLogicCrownInstance.printCrownPattern();
                 break;
 
+                    //for arrowhead pattern
+            case "arrowhead":
+                printpackage.PrintLogicArrowhead PrintLogicArrowheadInstance =new printpackage.PrintLogicArrowhead();
+                PrintLogicArrowheadInstance.printarrowheadpattern();
+                break;
+                 
             default:
                 System.out.println("thats not an option");
          }
